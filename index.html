@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Результаты верстки</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+	<aside class="navigation">
+		<div class="title">Меню</div>
+		<div class="btn btn-menu"></div>
+		<nav class="nav-links">
+			<ul>
+				<li><a href="#buttons" data-target="button-page">Кнопка на все случаи</a></li>
+				<li><a href="#register" data-target="register-page">Форма регистрации</a></li>
+				<li><a href="#tooltips" data-target="tooltips-page">Всплывающие подсказки</a></li>
+				<li><a href="#loader" data-target="loader-page">Индикатор загрузки</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<div class="slider-wrapper" id="slider-wrapper">
+		<section id="button-page" class="slider-button-page">
+			<div class="slider-inner">
+				<div class="title">Кнопка на все случаи жизни</div>
+
+				<div class="single-btn">
+					<input type="button" class="btn" value="Normal" />
+					<a href="#!" class="btn">Link</a>
+					<button class="btn">Button</button>
+					<span class="btn">Span</span>
+				</div>
+
+				<div class="btn-group">
+					<a href="#!" class="btn">Left</a>
+					<button class="btn">Middle</button>
+					<span class="btn">Right</span>
+				</div>
+			</div>
+		</section>
+		<section id="register-page" class="slider-register-page">
+			<div class="slider-inner">
+				<div class="title">Форма</div>
+				<div class="register-block noselect clearfix">
+					<div class="inner">
+						<div class="head-text">Регистрация</div>
+						<div class="social-buttons">
+							<a href="#/auth/vk" class="btn btn-social btn-vk">Регистрация из <span>Вконтакте</span></a>
+							<a href="#/auth/facebook" class="btn btn-social btn-facebook">Регистрация из <span>Facebook</span></a>
+							<div class="social-other" id="social-other">
+								<a href="#/auth/gplus" class="btn btn-social btn-gplus">Регистрация из <span>Google Plus</span></a>
+								<a href="#/auth/yandex" class="btn btn-social btn-yandex">Регистрация из <span>Яндекс</span></a>
+							</div>
+							<button class="other-link" id="other-link">
+								<span class="open">Другие</span>
+								<span class="hide">Скрыть</span>
+							</button>
+						</div>
+						<div class="or-text">или</div>
+						<div class="register-form">
+							<form action="/register" method="post" onsubmit="return false;">
+								<input type="email" name="email" id="email" class="inp" placeholder="Ваш логин или E-mail" />
+								<input type="password" name="password" id="password" class="inp" placeholder="Пароль" />
+							</form>
+							<div class="remember-block">
+								<label class="remember-me">
+									<input type="checkbox" name="remember" class="checkbox-basic" checked />
+									<span class="checkbox-style"></span>
+									<span class="remember-text">Запомнить меня</span>
+								</label>
+								<a href="#/user/remember" class="remember-link">Забыли пароль?</a>
+							</div>
+							<input type="submit" class="btn btn-register" value="Зарегистрироваться" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="tooltips-page" class="slider-tooltips-page">
+			<div class="slider-inner">
+				<div class="title">Всплывающие подсказки</div>
+				<div class="top-btn">
+					<button class="btn tooltip tooltip-top" data-tooltip="Tooltip on the top">Top</button>
+					<button class="btn tooltip tooltip-bottom" data-tooltip="Tooltip on the bottom">Bottom</button>
+				</div>
+				<div class="bottom-btn">
+					<button class="btn tooltip tooltip-left" data-tooltip="Tooltip on the left">Left</button>
+					<button class="btn tooltip tooltip-right" data-tooltip="Tooltip on the right">Right</button>
+				</div>
+				<div class="login-btn"><button class="btn tooltip tooltip-top" data-tooltip="Чтобы войти в систему кликните по кнопке">Войти в систему</button></div>
+			</div>
+		</section>
+		<section id="loader-page" class="slider-loader-page">
+			<div class="slider-inner">
+				<div class="title">Индикатор загрузки</div>
+				<div class="block-parent">
+					<div class="circle-parent">
+						<div class="circle"></div>
+						<div class="circle-re"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
