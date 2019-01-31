@@ -1,1 +1,1 @@
-Test makeup for uCoz.
+Test work in HTML/CSS and little JavaScript for uCoz.
